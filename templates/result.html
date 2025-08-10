@@ -1,0 +1,38 @@
+<!-- templates/result.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Result — Fruit & Veg Recognizer</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Prediction Result</h1>
+
+    <div class="result-card">
+      <div class="swatch" style="background: {{ color }}"></div>
+      <div class="result-text">
+        <h2 class="pred">{{ prediction }}</h2>
+        <p>Size: {{ size }} cm</p>
+      </div>
+    </div>
+
+    <div class="prob-card">
+      <h3>Top guesses</h3>
+      <ul>
+        {% for cls, p in class_probs[:5] %}
+          <li class="prob-row">
+            <strong>{{ cls }}</strong>
+            <span class="prob">{{ '{:.1f}%'.format(p*100) }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <a class="btn" href="/">Try another</a>
+    <footer class="footer">KNN demo · Synthetic dataset</footer>
+  </main>
+</body>
+</html>
