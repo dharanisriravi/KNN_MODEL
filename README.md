@@ -18,7 +18,7 @@ Easily extensible to use real datasets.
 
 ## Project Structure
 
-
+![alt text](image-2.png)
 
 ## Installation & Setup
 1. Clone the repository
