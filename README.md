@@ -6,15 +6,15 @@ The project includes a Flask-based web application with a modern UI where users 
 
 ## Features
 
-Synthetic dataset generated with realistic RGB color and size variations for common fruits and vegetables.
+- Synthetic dataset generated with realistic RGB color and size variations for common fruits and vegetables.
 
-KNN model for classification.
+- KNN model for classification.
 
-Beautiful, responsive UI built with HTML, CSS, and JavaScript.
+- Beautiful, responsive UI built with HTML, CSS, and JavaScript.
 
-Real-time predictions without uploading images.
+- Real-time predictions without uploading images.
 
-Easily extensible to use real datasets.
+- Easily extensible to use real datasets.
 
 ## Project Structure
 
@@ -29,9 +29,9 @@ cd fruit-knn
 2. Create a virtual environment and install dependencies
 
 python -m venv venv
-# On macOS / Linux
+### On macOS / Linux
 source venv/bin/activate
-# On Windows
+### On Windows
 venv\Scripts\activate
 
 pip install -r requirements.txt
@@ -69,24 +69,25 @@ Features (R, G, B, size) are standardized using StandardScaler. A KNN model with
 Users select a color and size, which are fed to the trained model for prediction. Top predicted classes are shown with confidence percentages.
 
 ### Customization
-Add more items: Modify the prototypes dictionary in train_model.py with new fruits/vegetables.
+- Add more items: Modify the prototypes dictionary in train_model.py with new fruits/vegetables.
 
-Use real data: Replace synthetic generation with a CSV containing real-world measurements (R, G, B, size, label).
+- Use real data: Replace synthetic generation with a CSV containing real-world measurements (R, G, B, size, label).
 
-Adjust KNN parameters: Tune n_neighbors or switch algorithms in train_model.py.
+- Adjust KNN parameters: Tune n_neighbors or switch algorithms in train_model.py.
 
 ## Requirements
-Python 3.8+
 
-Flask
+- Python 3.8+
 
-numpy
+- Flask
 
-pandas
+- numpy
 
-scikit-learn
+- pandas
 
-joblib
+- scikit-learn
+
+- joblib
 
 ## Install all dependencies with:
 
@@ -100,5 +101,3 @@ pip install -r requirements.txt
 
 ![alt text](image-1.png)
 
-## AUTHOR 
-R. DHARANI SRI
